@@ -9,5 +9,43 @@ body {
 }
 
 .navbar {
-    background-color: #556B2F !important; /* olive green */
+    background-color: #556B2F !important; 
 }
+
+/* Hero section styles */
+
+.hero-wrapper {
+    background-color: #A5B88F20; 
+    padding: 80px 20px;
+    border-radius: 10px;
+    margin-top: 40px;
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero-title {
+    font-size: 3rem;
+    color: #556B2F; 
+    font-weight: 700;
+}
+
+.hero-subtitle {
+    font-size: 1.2rem;
+    color: #2F2F2F; 
+    margin-top: 15px;
+}
+
+/* Custom green outline button */
+.menu-btn {
+    border-color: #556B2F !important;
+    color: #556B2F !important;
+}
+
+.menu-btn:hover {
+    background-color: #556B2F !important;
+    color: #F5F5E9 !important;
+}
+

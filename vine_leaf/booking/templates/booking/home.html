@@ -1,8 +1,32 @@
 {% extends "base.html" %}
+{% load static %}
 
 {% block title %}Home{% endblock %}
 
 {% block content %}
-<h2>Welcome to The Vine Leaf</h2>
-<p>Your table is waiting. Book a reservation today!</p>
+
+<!-- Hero Section -->
+<div class="hero-wrapper">
+    <div class="hero-content text-center">
+        <h1 class="hero-title">Welcome to The Vine Leaf</h1>
+        <p class="hero-subtitle">
+            Your table is waiting. Book a reservation today!
+        </p>
+
+        <div class="hero-buttons mt-4">
+            <a href="#" class="btn btn-outline-secondary btn-lg mx-2">Make a Booking</a>
+            <a href="#" class="btn btn-outline-secondary btn-lg mx-2 menu-btn">View Menu</a>
+            <a href="#" class="btn btn-outline-secondary btn-lg mx-2">More Information</a>
+        </div>
+    </div>
+</div>
+
+<div class="container mt-5 text-center">
+    <h2 class="section-heading">Experience Rustic Dining Inspired by Nature</h2>
+    <p class="section-description mt-3">
+        At The Vine Leaf, we blend seasonal ingredients, warm hospitality, 
+        and timeless recipes to bring you an unforgettable dining experience.
+    </p>
+</div>
+
 {% endblock %}
