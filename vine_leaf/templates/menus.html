@@ -1,27 +1,51 @@
 {% extends "base.html" %}
-
-{% block title %}Our Menu{% endblock %}
-
+{% block title %}Our Menu{% endblock %} 
 {% block content %}
 
 <div class="container mt-5 menu-page">
+  <h2 class="text-center mb-3">Our Menu</h2>
+  <p class="text-center text-muted mb-5">
+    Discover the flavours of <strong>The Vine Leaf</strong>. Fresh, seasonal
+    ingredients inspired by rustic countryside dining.
+  </p>
 
-    <h2 class="text-center mb-3">Our Menu</h2>
-    <p class="text-center text-muted mb-5">
-        Discover the flavours of <strong>The Vine Leaf</strong>.  
-        Fresh, seasonal ingredients inspired by rustic countryside dining.
-    </p>
+  <div class="row" id="menu-grid">
+    <!-- Starters -->
+        <div class="col-md-4 mb-5">
+            <h3 class="text-center mb-3">Starters</h3>
 
-    <div class="row" id="menu-grid starters">
-        <h2>Starters</h2>
-            <div class="col-md-4 mb-4">
-                <div class="card menu-card p-3">
-                    <h5>Dish name</h5>
-                    <p class="text-muted">Short description</p>
+            <div class="card menu-card p-3">
+                <h5>Dish name</h5>
+                <p class="text-muted">Short description</p>
                 <strong>Price</strong>
             </div>
         </div>
+
+        <!-- Mains -->
+        <div class="col-md-4 mb-5">
+            <h3 class="text-center mb-3">Mains</h3>
+
+            <div class="card menu-card p-3">
+                <h5>Dish name</h5>
+                <p class="text-muted">Short description</p>
+                <strong>Price</strong>
+            </div>
+        </div>
+
+        <!-- Drinks -->
+        <div class="col-md-4 mb-5">
+            <h3 class="text-center mb-3">Drinks</h3>
+
+            <div class="card menu-card p-3">
+                <h5>Drink name</h5>
+                <p class="text-muted">Short description</p>
+                <strong>Price</strong>
+            </div>
+        </div>
+
     </div>
+
 </div>
+
 
 {% endblock %}
