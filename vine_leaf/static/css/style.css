@@ -55,10 +55,16 @@ body {
     font-weight: 700;
 }
 
+.menu-page .col-md-4 {
+  padding: 0.75rem;      
+}
+
 .menu-card {
     border: 1px solid #d8d4c4;
     background-color: #faf9f5;
     border-radius: 10px;
+    margin-bottom: 2rem !important;
+    
 }
 
 .menu-card h5 {
