@@ -15,5 +15,8 @@ def booking_page(request):
         form = BookingForm()
     return render(request, 'booking.html', {'form': form})
 
+def booking_success(request):
+    return render(request, 'booking_success.html')
+
 def menus_page(request):
     return render(request, 'menus.html')
