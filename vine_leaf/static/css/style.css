@@ -71,6 +71,21 @@ body {
     margin-top: 15px;
 }
 
+/* map and opening times styles */
+.map-container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.opening-times td:first-child {
+    font-weight: 600;
+}
+
+.opening-times {
+    font-size: 1.1rem;
+    color :#556b2f
+}
+
 /* Menu page styles */
 .menu-page h2 {
     color: #556b2f; /* olive green */
