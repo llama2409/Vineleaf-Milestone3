@@ -1,4 +1,6 @@
 from django import forms
+from django.utils import timezone
+from datetime import datetime, timedelta
 from .models import Booking
 
 class BookingForm(forms.ModelForm):
@@ -20,5 +22,12 @@ class BookingForm(forms.ModelForm):
             existing = Booking.objects.filter(date=date, time=time).exists()
             if existing:
                 raise forms.ValidationError("This time slot is already booked. Please choose another time.")
+            
+            booking_datetime = datetime.combine(date, time)
+            booking_datetime = timezone.make_aware(booking_datetime)
+
+            now = timezone.now()
+            if booking_datetime < now + timedelta(hours=2):
+                raise forms.ValidationError("Bookings must be made at least 2 hoursin advance.")
 
         return cleaned_data
