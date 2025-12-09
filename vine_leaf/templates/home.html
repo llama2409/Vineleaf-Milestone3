@@ -6,17 +6,17 @@
 {% block content %}
 
 <!-- Hero Section -->
-<div class="hero-wrapper">
-    <div class="hero-content text-center">
+<div class="hero-wrapper hero-section">
+    <div class="hero-content hero-text text-center">
         <h1 class="hero-title">Welcome to The Vine Leaf</h1>
         <p class="hero-subtitle">
             Your table is waiting. Book a reservation today!
         </p>
 
         <div class="hero-buttons mt-4">
-            <a href="{% url 'booking' %}" class="btn btn-outline-secondary btn-lg mx-2">Make a Booking</a>
-            <a href="{% url 'menus' %}" class="btn btn-outline-secondary btn-lg mx-2 menu-btn">View Menu</a>
-            <a href="#" class="btn btn-outline-secondary btn-lg mx-2">More Information</a>
+            <a href="{% url 'booking' %}" class="btn btn-outline-secondary hero-buttons btn-lg mx-2">Make a Booking</a>
+            <a href="{% url 'menus' %}" class="btn btn-outline-secondary hero-buttons btn-lg mx-2 menu-btn">View Menu</a>
+            <a href="#" class="btn btn-outline-secondary hero-buttons btn-lg mx-2">More Information</a>
         </div>
     </div>
 </div>

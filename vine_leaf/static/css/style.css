@@ -38,15 +38,37 @@ body {
     margin-top: 15px;
 }
 
-/* Custom green outline button */
-.menu-btn {
-    border-color: #556B2F !important;
-    color: #556B2F !important;
+.hero-section {
+    height: 45vh;
+    background-image: url('/static/images/hero.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    color: white;
+    text-shadow: 1px 1px 8px black;
+    border-radius: 8px;
 }
 
-.menu-btn:hover {
-    background-color: #556B2F !important;
-    color: #F5F5E9 !important;
+.hero-text {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-buttons {
+    background-color: #556b2f; /* olive green */
+    color: white;
+    padding: 12px 30px;
+    border-radius: 8px;
+    font-weight: 600;
+    border: none;
+    transition: 0.3s ease;
+}
+
+.hero-subtitle {
+    font-size: 1.2rem;
+    color: #F5F5E9; 
+    margin-top: 15px;
 }
 
 /* Menu page styles */
