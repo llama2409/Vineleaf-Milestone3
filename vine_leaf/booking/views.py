@@ -20,3 +20,6 @@ def booking_success(request):
 
 def menus_page(request):
     return render(request, 'menus.html')
+
+def contact_page(request):
+    return render(request, 'contact.html')
