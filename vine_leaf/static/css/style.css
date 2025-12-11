@@ -108,3 +108,17 @@ body {
     color: #556b2f;
     font-weight: 600;
 }
+
+/* Contact page styles */
+.contact-hero {
+    height: 30vh;
+    background-image: url('/static/images/contact_hero.jpg'); 
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.contact-hero div {
+    position: relative;
+    z-index: 2;
+}
