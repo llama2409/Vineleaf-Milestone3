@@ -122,3 +122,46 @@ body {
     position: relative;
     z-index: 2;
 }
+
+/* Booking form styles */
+form input,
+form select,
+form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #F5F5E9;
+    border-radius: 4px;
+    font-family: inherit;
+}
+
+form input:focus,
+form select:focus,
+form textarea:focus {
+    border-color: #556b2f;
+    outline: none;
+}
+
+form label {
+    font-weight: 600;
+    color: #556b2f;
+    display: block;
+    margin-bottom: 4px;
+}
+
+form button {
+    background-color: #556b2f;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form .errorlist {
+    color: #b22222;
+    font-size: 0.9rem;
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 8px;
+}
