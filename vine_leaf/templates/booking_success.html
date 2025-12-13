@@ -9,6 +9,9 @@
     <a class="btn btn-primary mt-3" href="{% url 'edit_booking' booking.id %}">
         Edit booking
     </a>
+    <a class="btn btn-danger mt-3" href="{% url 'delete_booking' booking.id %}">
+        Cancel booking
+    </a>
     <a class="btn btn-primary mt-3" href="{% url 'home' %}">Back to Home</a>
 </div>
 {% endblock %}

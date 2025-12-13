@@ -37,6 +37,16 @@ def edit_booking(request, pk):
     })
 
 
+def delete_booking(request, pk):
+    booking = get_object_or_404(Booking, pk=pk)
+
+    if request.method == 'POST':
+        booking.delete()
+        return redirect('home')
+
+    return render(request, 'delete_booking.html', {'booking': booking})
+
+
 def booking_success(request, pk):
     booking = get_object_or_404(Booking, pk=pk)
     return render(request, 'booking_success.html', {'booking': booking})
