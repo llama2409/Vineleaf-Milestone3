@@ -6,7 +6,9 @@
 <div class="container mt-5 text-center">
     <h2>Your booking is confirmed!</h2>
     <p>Thank you for choosing <strong>The Vine Leaf</strong>. We look forward to welcoming you.</p>
-
+    <a class="btn btn-primary mt-3" href="{% url 'edit_booking' booking.id %}">
+        Edit booking
+    </a>
     <a class="btn btn-primary mt-3" href="{% url 'home' %}">Back to Home</a>
 </div>
 {% endblock %}

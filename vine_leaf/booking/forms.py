@@ -42,8 +42,15 @@ class BookingForm(forms.ModelForm):
             cleaned_data['time'] = chosen_time
 
             # Prevent double-booking
-            existing = Booking.objects.filter(date=date, time=chosen_time).exists()
-            if existing:
+            existing = Booking.objects.filter(
+                date=date,
+                time=chosen_time
+            )
+
+            if self.instance.pk:
+                existing = existing.exclude(pk=self.instance.pk)
+
+            if existing.exists():
                 raise forms.ValidationError(
                     "This time slot is already booked. Please choose another time."
                 )

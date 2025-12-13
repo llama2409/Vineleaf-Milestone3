@@ -21,7 +21,7 @@
                 {{ form.as_p }}
 
                 <button type="submit" class="btn btn-primary w-100 booking-submit-btn">
-                Confirm Booking
+                    {% if editing %}Update Booking{% else %}Submit Booking{% endif %}
                 </button>
             </form>
         </div>
