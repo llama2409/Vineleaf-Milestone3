@@ -199,3 +199,22 @@ form .errorlist {
         padding: 0 10px;
     }
 }
+
+@media (min-width: 769px) and (max-width: 1024px) { /* tablet screens */
+
+    .hero-section {
+        height: 35vh;
+    }
+
+    .hero-title {
+        font-size: 2.5rem;
+    }
+
+    .hero-content {
+        padding: 0 20px;
+    }
+
+    .menu-page .col-md-4 {
+        padding: 1rem;
+    }
+}
