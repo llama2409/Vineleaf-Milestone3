@@ -1,1 +1,1 @@
-web: gunicorn vine_leaf.wsgi
+web: gunicorn vine_leaf.wsgi --log-file-
