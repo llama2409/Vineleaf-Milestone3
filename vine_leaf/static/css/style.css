@@ -112,7 +112,7 @@ body {
 /* Contact page styles */
 .contact-hero {
     height: 30vh;
-    background-image: url('/static/images/contact_hero.jpg'); 
+    background-image: url('/static/images/contacthero.jpg'); 
     background-size: cover;
     background-position: center;
     position: relative;
