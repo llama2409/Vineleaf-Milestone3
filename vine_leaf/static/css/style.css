@@ -165,3 +165,37 @@ form .errorlist {
     padding-left: 0;
     margin-bottom: 8px;
 }
+
+/* Media Queries */
+@media (max-width: 768px) { /* mobile screens */
+
+    .hero-section {
+        min-height: 45vh;
+        border-radius: 0;
+    }
+
+    .hero-title {
+        font-size: 2rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+
+    .hero-buttons {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+
+    .menu-card {
+        margin-bottom: 1.5rem;
+    }
+
+    .contact-hero {
+        height: 20vh;
+    }
+
+    form {
+        padding: 0 10px;
+    }
+}
